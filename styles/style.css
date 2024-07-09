@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-uno: #EEEEEE;
+    --color-dos: #393E46;
+    --color-tres: #FFFFFF;
+    --color-cuatro: #222831;
+    --fuente-principal: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-color: var(--color-uno);
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.escenario {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 1% 1% 1%;
+    gap: 3%;
+}
+
+.escenario__palabra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+}
+
+.escenario__botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    
+}
+
+.escenario__botones__formato {
+    background-color: var(--color-dos);
+    color: var(--color-tres);
+    padding: 20px 80px;
+    border-radius: 24px;
+    font-family: var(--fuente-principal);
+}
+
+.escenario__botones__formato:hover {
+    background-color: var(--color-cuatro);
+}
+
+#muestraPalabra {
+    resize: none;
+    outline: none;
+}
+
+#palabraUsuario {
+    resize: none;
+    outline: none;
+}
+
+@media (max-width: 800px) {
+    .escenario {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .escenario {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+    }
+
+    .escenario__botones {
+        flex-direction: column;
+        gap: 6px;
+        width: auto;
+    }
+}

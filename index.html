@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header></header>
+    <main class="escenario">
+        <div class="escenario__palabra">
+            <label for="palabraUsuario"></label>
+            <textarea id="palabraUsuario" type="text" placeholder="Escribe aquí tu texto en minúsculas" rows="38" cols="78"></textarea>
+            <div class="escenario__botones">
+                <button onclick="encriptarVocales();" class="escenario__botones__formato">Encriptar</button>
+                <button onclick="desencriptarPalabra();" class="escenario__botones__formato">Desencriptar</button>
+            </div>
+        </div>
+        <div class="escenario__palabra">
+            <label for="muestraPalabra"></label>
+            <textarea id="muestraPalabra" name="capturaPalabra" placeholder="Sin texto recibido" rows="38" cols="38"></textarea>
+            <div class="escenario__botones">
+                <button onclick="copiarPalabra();" class="escenario__botones__formato">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./vscode/app.js"></script>
+</body>
+</html>
